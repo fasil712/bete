@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Second Page</title>
+  </head>
+  <body>
+    <div id="companyData"></div>
+
+    <script>
+      // Make an AJAX request to retrieve_data.php
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          // Update the content of the companyData div with the retrieved data
+          document.getElementById("companyData").innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", "retrieve_data.php", true);
+      xhttp.send();
+    </script>
+  </body>
+</html>

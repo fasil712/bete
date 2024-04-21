@@ -1,0 +1,18 @@
+.h1{
+    color: green;
+    background-color: aqua;
+    padding: 10px;
+}
+#h1id{
+    color: yellow;
+    background-color: red;
+    padding: 10px;
+}
+.btnfasil{
+    background-color: rgb(70, 70, 231);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
